@@ -1,0 +1,12 @@
+---
+system_groups:
+  - 'pass'
+system_users:
+  - 'pass'
+authorized_keys:
+  - user:                       'pass'
+    keyfile:                    '../../inventory/hosts/aaron-phone/users/aaron/files/ssh_keys/id_rsa.pub'
+  - user:                       'pass'
+    keyfile:                    '../../inventory/hosts/mawg/users/aaron/files/ssh_keys/id_rsa.pub'
+  - user:                       'pass'
+    keyfile:                    '../../inventory/hosts/rudolph/users/rachel/files/ssh_keys/id_rsa.pub'
