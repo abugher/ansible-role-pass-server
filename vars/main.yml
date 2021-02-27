@@ -3,6 +3,8 @@ system_groups:
   - 'pass'
 system_users:
   - 'pass'
+install_packages:
+  - 'git'
 authorized_keys:
   - user:                       'pass'
     keyfile:                    '../../inventory/hosts/aaron-phone/users/aaron/files/ssh_keys/id_rsa.pub'
