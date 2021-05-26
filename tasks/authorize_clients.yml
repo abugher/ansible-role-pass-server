@@ -1,0 +1,9 @@
+---
+- include:                      '../tasks/authorized_keys.yml'
+  vars:
+    authorized_keys:
+      - user:                     'pass'
+        keyfile:                  "../../inventory/hosts/{{ pass_client }}/users/{{ pass_user }}/files/ssh_keys/id_rsa.pub"
+  with_items:                   "{{ hostvars[pass_client]['pass_users'] }}"
+  loop_control:
+    loop_var:                   pass_user
