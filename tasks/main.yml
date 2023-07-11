@@ -3,7 +3,7 @@
 - include:                      '../tasks/system_users.yml'
 - include:                      '../tasks/install_packages.yml'
 - include:                      'authorize_clients.yml'
-  with_items:                   "{{ groups['pass_client'] }}"
+  with_items:                   "{{ groups['pass-client'] }}"
   loop_control:
     loop_var:                   pass_client
 - include:                      '../tasks/allow_users.yml'
