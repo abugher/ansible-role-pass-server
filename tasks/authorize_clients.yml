@@ -1,5 +1,5 @@
 ---
-- include:                      '../tasks/authorized_keys.yml'
+- include_tasks:                '../tasks/authorized_keys.yml'
   vars:
     authorized_keys:
       - user:                     'pass'
