@@ -1,9 +1,9 @@
 ---
-- include_tasks:                '../tasks/system_groups.yml'
-- include_tasks:                '../tasks/system_users.yml'
-- include_tasks:                '../tasks/install_packages.yml'
+- include_tasks:                'tasks/common/system_groups.yml'
+- include_tasks:                'tasks/common/system_users.yml'
+- include_tasks:                'tasks/common/install_packages.yml'
 - include_tasks:                'authorize_clients.yml'
   with_items:                   "{{ groups['pass-client'] }}"
   loop_control:
     loop_var:                   pass_client
-- include_tasks:                '../tasks/allow_users.yml'
+- include_tasks:                'tasks/common/allow_users.yml'
